@@ -1,6 +1,7 @@
 import { defineAsyncComponent } from 'vue'
 
 import { useModal } from '~/composables/shared/useModal'
+import type { ComponentProps } from "~/types";
 
 export function useConfirmation() {
   const ConfirmDialog = defineAsyncComponent(
@@ -10,7 +11,7 @@ export function useConfirmation() {
   const modal = useModal()
 
   function revealConfirmation(
-    propsComponent: any,
+    propsComponent: ComponentProps<typeof ConfirmDialog>,
   ) {
     modal.open(ConfirmDialog, propsComponent)
   }
