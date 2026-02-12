@@ -1,0 +1,17 @@
+.text_default {
+  font-size: 18px;
+  line-height: 120%;
+
+  @media (max-width: 920px) {
+    font-size: 16px;
+  }
+}
+
+.text_big {
+  font-size: 25px;
+  line-height: 124%;
+
+  @media (max-width: 920px) {
+    font-size: 18px;
+  }
+}

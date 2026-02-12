@@ -1,0 +1,29 @@
+{
+  "name": "test-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "debug": "nuxt dev --inspect",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@types/node": "^18",
+    "sass": "^1.66.1",
+    "typescript": "^5.4.3"
+  },
+  "overrides": {
+    "vue": "latest",
+    "@vercel/nft": "^0.27.4"
+  },
+  "dependencies": {
+    "nuxt": "^3.16.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/core": "^12.1.0"
+  }
+}
